@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="src/responsive.css">
+    <title>Twitter Clone</title>
+</head>
+
+<body class="bg-black">
+
+    <div class="main flex flex-row w-5/6 m-auto">
+
+        <div
+            class="bg-black w-[12%] md:w-[23%] text-white font-medium space-y-9 p-2 pl-0 text-[20px] h-fit sticky top-0">
+            <div>
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class=" w-9 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                    <g>
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                            fill="#FFFFFF"></path>
+                    </g>
+                </svg>
+            </div>
+
+            <div>
+                <ul class="space-y-4">
+                    <li class="flex flex-row items-center gap-3">
+                        <span class="material-symbols-outlined">home</span>
+                        <span class="hidden md:block">Home</span>
+                    </li>
+
+                    <li class="flex flex-row items-center gap-3"><span class="material-symbols-outlined">search</span>
+                        <span class="hidden md:block">Explore</span>
+                    </li>
+
+                    <li class="flex flex-row items-center gap-3"><span class="material-symbols-outlined">
+                            notifications
+                        </span>
+                        <span class="hidden md:block">Notification</span>
+                    </li>
+                    <li class="flex flex-row items-center gap-3"><span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <span class="hidden md:block">Messages</span>
+                    </li>
+                    <li class="flex flex-row items-center gap-3"><span class="material-symbols-outlined">
+                            clock_loader_60
+                        </span>
+                        <span class="hidden md:block">Grok</span>
+                    </li>
+                    <li class="flex flex-row items-center gap-3"><span class="material-symbols-outlined">
+                            groups
+                        </span>
+                        <span class="hidden md:block">Communites</span>
+                    </li>
+
+                    <li class="flex flex-row items-center gap-3"><span class="material-symbols-outlined">
+                            workspace_premium
+                        </span>
+                        <span class="hidden md:block">Premium</span>
+                    </li>
+                    <li class="flex flex-row items-center gap-3"><span class="material-symbols-outlined">
+                            flash_on
+                        </span>
+                        <span class="hidden md:block">Verified Orgs</span>
+                    </li>
+                    <li class="flex flex-row items-center gap-3"><span class="material-symbols-outlined">
+                            person
+                        </span>
+                        <span class="hidden md:block">Profile</span>
+                    </li>
+                    <li class="flex flex-row items-center gap-3"><span class="material-symbols-outlined">
+                            more_horiz
+                        </span>
+                        <span class="hidden md:block">More</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class=" block md:hidden">
+                <div class=" bg-blue-500 w-fit flex justify-center items-center p-4 rounded-full">
+                    <span class="material-symbols-outlined">
+                        post_add
+                    </span>
+                </div>
+            </div>
+
+            <div class="md:block hidden">
+                <div
+                    class="post bg-blue-400  text-white rounded-full flex justify-center items-center font-semibold p-[10px] hover:bg-blue-500 duration-200">
+                    <span>Post</span>
+                </div>
+            </div>
+            <div class="account font-normal flex flex-row gap-1 hover:bg-slate-800 duration-200 rounded-full p-2">
+                <div class="pro flex flex-row items-center">
+                    <img src="https://pbs.twimg.com/profile_images/1828034343446466560/lyDSjanK_bigger.jpg"
+                        class="size-11 rounded-full" alt="">
+                </div>
+                <div class="hidden md:block">
+                    <h1 class="text-[17px] font-bold">Lorem ipsum dolor</h1>
+                    <p class="text-[13px] text-gray-400">Lorem ipsumsit.</p>
+                </div>
+                <div class=" hidden md:flex flex-row items-center">
+                    <span class="material-symbols-outlined">
+                        more_vert
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex flex-row w-full ">
+
+            <div class=" bg-black w-full md:w-[65%] text-white border border-gray-600  ">
+
+                <div
+                    class="sticky top-0 bg-opacity-30 backdrop-blur-md bg-slate-900 w-full flex flex-row border-b-2 pt-1 border-gray-600 h-[60px]">
+
+                    <span
+                        class="w-1/2 flex justify-center items-center p-2 hover:bg-slate-800 font-bold duration-200">For
+                        you</span>
+                    <span
+                        class="w-1/2 flex justify-center items-center p-2 hover:bg-slate-800 font-bold duration-200">Following</span>
+
+                </div>
+
+                <div class="happens p-5 flex flex-row gap-2 border-b-2  border-gray-600">
+                    <div>
+                        <img src="https://pbs.twimg.com/profile_images/1828034343446466560/lyDSjanK_bigger.jpg"
+                            class="size-11 rounded-full" alt="">
+                    </div>
+                    <div class="w-full mt-2 flex flex-col gap-2">
+                        <input type="text" placeholder="What is Happening?!"
+                            class="w-full text-white outline-none bg-black ">
+                        <div class="text-blue-500 flex flex-row">
+                            <span class="material-symbols-outlined">
+                                globe
+                            </span>
+                            <p>Everyoune can reply</p>
+                        </div>
+                        <hr>
+                        <div class="icons p-2 text-blue-500 flex  flex-col md:flex-row">
+                            <div class="w-full space-x-2">
+                                <span class="material-symbols-outlined">
+                                    image
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    gif_box
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    list
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    sentiment_satisfied
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    event
+                                </span>
+
+                            </div>
+                            <span
+                                class="text-white font-bold rounded-full text-center py-1 px-3 bg-blue-500">Post</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="show text-blue-500 text-center border-b-2 p-3 border-gray-600">Show 690 posts</div>
+
+                <div class="post p-4 flex flex-col gap-7 ">
+
+                    <div class="first flex flex-row text-white gap-3">
+                        <div class="profilePicture">
+                            <img src="https://pbs.twimg.com/profile_images/1498070100393754625/C2V-fbll_bigger.jpg"
+                                class="size-14 rounded-full" alt="">
+                        </div>
+                        <div class="info w-full flex flex-col gap-2 ">
+                            <div class="title flex flex-row items-center">
+                                <div class="w-full flex flex-row gap-2">
+                                    <span class="font-semibold">DogeDesingner</span>
+                                    <span class="material-symbols-outlined text-blue-600">
+                                        check_circle
+                                    </span>
+                                    <span class="text-gray-500">@cb_sdfsdff . Jan26</span>
+                                </div>
+                                <span class="material-symbols-outlined">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <p>If you ever feel dumb, just remember that Mark Zuckerberg made an app & named it 'Twitter
+                                Killer.'</p>
+                            <div class="photo mt-2">
+                                <img class="rounded-lg"
+                                    src="https://pbs.twimg.com/media/GV3MgD4aEAAFpMm?format=jpg&name=small" alt="">
+                            </div>
+                            <div class="w-full flex flex-row text-gray-500 mt-1 justify-between">
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        chat
+                                    </span>
+                                    <span>256</span>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>
+                                    <span>256</span>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span>
+                                    <span>256</span>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        equalizer
+                                    </span>
+                                    <span>256</span>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined">
+                                        upload
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="first flex flex-row text-white gap-3">
+                        <div class="profilePicture">
+                            <img src="https://pbs.twimg.com/profile_images/1498070100393754625/C2V-fbll_bigger.jpg"
+                                class="size-14 rounded-full" alt="">
+                        </div>
+                        <div class="info w-full flex flex-col gap-2 ">
+                            <div class="title flex flex-row items-center">
+                                <div class="w-full flex flex-row gap-2">
+                                    <span class="font-semibold">DogeDesingner</span>
+                                    <span class="material-symbols-outlined text-blue-600">
+                                        check_circle
+                                    </span>
+                                    <span class="text-gray-500">@cb_sdfsdff . Jan26</span>
+                                </div>
+                                <span class="material-symbols-outlined">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <p>If you ever feel dumb, just remember that Mark Zuckerberg made an app & named it 'Twitter
+                                Killer.'</p>
+                            <div class="photo mt-2">
+                                <img class="rounded-lg"
+                                    src="https://pbs.twimg.com/media/GV3MgD4aEAAFpMm?format=jpg&name=small" alt="">
+                            </div>
+                            <div class="w-full flex flex-row text-gray-500 mt-1 justify-between">
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        chat
+                                    </span>
+                                    <span>256</span>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>
+                                    <span>256</span>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span>
+                                    <span>256</span>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        equalizer
+                                    </span>
+                                    <span>256</span>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined">
+                                        upload
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="first flex flex-row text-white gap-3">
+                        <div class="profilePicture">
+                            <img src="https://pbs.twimg.com/profile_images/1498070100393754625/C2V-fbll_bigger.jpg"
+                                class="size-14 rounded-full" alt="">
+                        </div>
+                        <div class="info w-full flex flex-col gap-2 ">
+                            <div class="title flex flex-row items-center">
+                                <div class="w-full flex flex-row gap-2">
+                                    <span class="font-semibold">DogeDesingner</span>
+                                    <span class="material-symbols-outlined text-blue-600">
+                                        check_circle
+                                    </span>
+                                    <span class="text-gray-500">@cb_sdfsdff . Jan26</span>
+                                </div>
+                                <span class="material-symbols-outlined">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <p>If you ever feel dumb, just remember that Mark Zuckerberg made an app & named it 'Twitter
+                                Killer.'</p>
+                            <div class="photo mt-2">
+                                <img class="rounded-lg"
+                                    src="https://pbs.twimg.com/media/GV3MgD4aEAAFpMm?format=jpg&name=small" alt="">
+                            </div>
+                            <div class="w-full flex flex-row text-gray-500 mt-1 justify-between">
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        chat
+                                    </span>
+                                    <span>256</span>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>
+                                    <span>256</span>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span>
+                                    <span>256</span>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        equalizer
+                                    </span>
+                                    <span>256</span>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined">
+                                        upload
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="first flex flex-row text-white gap-3">
+                        <div class="profilePicture">
+                            <img src="https://pbs.twimg.com/profile_images/1498070100393754625/C2V-fbll_bigger.jpg"
+                                class="size-14 rounded-full" alt="">
+                        </div>
+                        <div class="info w-full flex flex-col gap-2 ">
+                            <div class="title flex flex-row items-center">
+                                <div class="w-full flex flex-row gap-2">
+                                    <span class="font-semibold">DogeDesingner</span>
+                                    <span class="material-symbols-outlined text-blue-600">
+                                        check_circle
+                                    </span>
+                                    <span class="text-gray-500">@cb_sdfsdff . Jan26</span>
+                                </div>
+                                <span class="material-symbols-outlined">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <p>If you ever feel dumb, just remember that Mark Zuckerberg made an app & named it 'Twitter
+                                Killer.'</p>
+                            <div class="photo mt-2">
+                                <img class="rounded-lg"
+                                    src="https://pbs.twimg.com/media/GV3MgD4aEAAFpMm?format=jpg&name=small" alt="">
+                            </div>
+                            <div class="w-full flex flex-row text-gray-500 mt-1 justify-between">
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        chat
+                                    </span>
+                                    <span>256</span>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>
+                                    <span>256</span>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span>
+                                    <span>256</span>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        equalizer
+                                    </span>
+                                    <span>256</span>
+                                </div>
+                                <div class="flex flex-row gap-1">
+                                    <span class="material-symbols-outlined">
+                                        bookmark
+                                    </span>
+                                    <span class="material-symbols-outlined">
+                                        upload
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+
+                </div>
+
+            </div>
+
+
+            <div class=" hidden bg-black md:w-[35%] border border-gray-600 p-5 md:flex flex-col gap-6">
+
+                <div class="sticky top-0 h-fit bg-black py-3">
+                    <div
+                        class="flex flex-row p-2 border border-none rounded-full bg-[#212327] hover:bg-gray-800 duration-200 gap-2 focus:border-blue-600 ">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#75FBFD">
+                                <path
+                                    d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                            </svg>
+                        </div>
+                        <input type="text" placeholder="Search"
+                            class="bg-[#212327] w-full text-white  hover:bg-gray-800 duration-200">
+                    </div>
+                </div>
+
+                <div class="premium text-white border border-[#4d525d] p-3 flex flex-col gap-2 rounded-[20px] ">
+                    <h1 class="font-bold text-[20px]">Subscribe to Premium</h1>
+                    <p>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                    <span
+                        class="bg-blue-500 font-semibold p-2 w-fit text-center hover:bg-blue-700 duration-200 rounded-full">Subscribe</span>
+                </div>
+
+
+
+            
+
+
+
+                    <div class="updates text-white border rounded-[20px] border-[#4d525d] p-3 flex flex-col gap-4 ">
+                        <h1 class="font-extrabold ">What's happening</h1>
+                        <ul class="flex flex-col gap-2">
+                            <li>
+                                <p class="text-[12px] text-gray-400">Entertainment · Trending</p>
+                                <h2 class="font-bold">#Animal</h2>
+                                <p class="text-[12px] text-gray-400">6,406 posts</p>
+                            </li>
+                            <li>
+                                <p class="text-[12px] text-gray-400">Entertainment · Trending</p>
+                                <h2 class="font-bold">#Animal</h2>
+                                <p class="text-[12px] text-gray-400">6,406 posts</p>
+                            </li>
+                            <li>
+                                <p class="text-[12px] text-gray-400">Entertainment · Trending</p>
+                                <h2 class="font-bold">#Animal</h2>
+                                <p class="text-[12px] text-gray-400">6,406 posts</p>
+                            </li>
+                            <li>
+                                <p class="text-[12px] text-gray-400">Entertainment · Trending</p>
+                                <h2 class="font-bold">#Animal</h2>
+                                <p class="text-[12px] text-gray-400">6,406 posts</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class=" p-3 border rounded-[20px] border-[#4d525d] follow space-y-2">
+                        <h1 class="text-white font-extrabold">Whom To Follow</h1>
+                        <div>
+                            <div
+                                class="account font-normal flex justify-between items-center flex-row gap-1 rounded-full p-2">
+                                <div class="flex flex-row gap-4">
+                                    <div class="pro flex flex-row items-center">
+                                        <img src="assets/picture-en3dnh2zi84sgt3t.jpg" class="size-7 rounded-full"
+                                            alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-[17px] font-bold text-white">Lorem ipsum dolor</h1>
+                                        <p class="text-[13px] text-gray-400">Lorem ipsumsit.</p>
+                                    </div>
+                                </div>
+                                <span
+                                    class="text-center hover:bg-slate-200 duration-200 bg-white font-semibold text-black rounded-3xl px-3 py-1">Follow</span>
+                            </div>
+
+                            <div
+                                class="account font-normal flex justify-between items-center flex-row gap-1 rounded-full p-2">
+                                <div class="flex flex-row gap-4">
+                                    <div class="pro flex flex-row items-center">
+                                        <img src="assets/picture-en3dnh2zi84sgt3t.jpg" class="size-7 rounded-full"
+                                            alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-[17px] font-bold text-white">Lorem ipsum dolor</h1>
+                                        <p class="text-[13px] text-gray-400">Lorem ipsumsit.</p>
+                                    </div>
+                                </div>
+                                <span
+                                    class="text-center hover:bg-slate-200 duration-200 bg-white font-semibold text-black rounded-3xl px-3 py-1">Follow</span>
+                            </div>
+
+                            <div
+                                class="account font-normal flex justify-between items-center flex-row gap-1 rounded-full p-2">
+                                <div class="flex flex-row gap-4">
+                                    <div class="pro flex flex-row items-center">
+                                        <img src="assets/picture-en3dnh2zi84sgt3t.jpg" class="size-7 rounded-full"
+                                            alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-[17px] font-bold text-white">Lorem ipsum dolor</h1>
+                                        <p class="text-[13px] text-gray-400">Lorem ipsumsit.</p>
+                                    </div>
+                                </div>
+                                <span
+                                    class="text-center hover:bg-slate-200 duration-200 bg-white font-semibold text-black rounded-3xl px-3 py-1">Follow</span>
+                            </div>
+
+                        </div>
+                    </div>
+            
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
